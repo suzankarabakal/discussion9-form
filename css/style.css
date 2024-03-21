@@ -1,0 +1,74 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+  
+
+  :root {
+    --black: #000000;
+    --white: #ffffff;
+    --green: #cdeebe;
+    --dark-green: #07630a;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    color: var(--white)
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid var(--black);
+    border-radius: 16px;
+    width:70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--black);
+    background: var(--green);
+  }
+
+  .radio {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* background: #575294; */
+    color: var(--black);
+  }
+
+  #name {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: var(--white);
+    color: var(--black);
+  }
+
+  #message {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid var(--black);
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--dark-green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--green);
+    border: 1px solid var(--black);
+    color: var(--black)
+  }
+
+
